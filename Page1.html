@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>RetroMailer</title>
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script> <!---Vuejs-->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Overpass"><!--Font Overpass-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"><!--Bootstrap-->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <meta name="google-signin-client_id" content="26626733731-v2s8ai440ui9lha7pvg7t3jbqgf23h93.apps.googleusercontent.com"><!--Google-->
+        <script src="https://apis.google.com/js/platform.js" async defer></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="script.js"></script>
+        <style>
+            .display1{
+                padding:5px;
+                text-align: center;   
+            }
+            .text1{
+                font-size: 12pt;
+            }
+            .responsive {
+                max-width: 80%;
+                height: auto;
+            }
+            .responsive1 {
+                max-width: 80%;
+                height: auto;
+            }
+
+            .features
+            {
+                background-color: #303030;
+            }
+            .contact
+            {
+                background-color: #303030;   
+            }
+            .font1
+            {
+                font-family: 'Overpass';
+            }
+            .white{
+                color: white;
+                font-size: 25pt;
+            }
+            .white1
+            {
+                color: white;
+            }
+            .feature
+            {
+                width:200px;
+                height:200px;
+            }
+            .cardmargin{
+                margin-left:20px;
+                margin-right:20px;
+            }
+            .black{
+                font-size: 25pt;
+            }
+            .box
+            {
+                margin-left:10%;
+                margin-right: 10%;
+                padding:5%;
+                background-color: lightblue;
+            }
+            .g-signin2
+            {
+                margin-left:45%;
+                margin-right:45%;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="app">
+                <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark"> 
+                    <a v-html="navbar" class="navbar-brand" href="#"></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse " id="navbarNavDropdown">
+                            <ul class="navbar-nav">
+                              <li class="nav-item">
+                                <a class="nav-link" href="#">Home</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" href="#features">Features</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" href="#pricing">Pricing</a>
+                              </li>
+                           </ul>                       
+                    </div>
+                </nav>  
+                <br>
+                <center>
+                <div class="display1">
+                    <span class="text1">Launch Successful Email Marketing Campaigns using RetroMailer!</span>
+                    <div class="g-signin2" width="240" height="50" data-longtitle="true" data-theme="dark" data-onsuccess="onSignIn"></div>
+                </div>
+                </center>
+                <center>
+                    <div class="main">
+                        <img class="responsive1" src="logo1.png"/>
+                    </div>   
+                    <div class="features" id="features">
+                        <br><br>
+                        <p class='white'>FEATURES</p>
+                        <br> 
+                        <div class="card-group cardmargin">
+                            <div class="card cardmargin">
+                            <img class="card-img-top" src="Feature 1.png" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">READYMADE TEMPLATES</h5>
+                                <p class="card-text">RetroMailer has a wide variety of ready-to-use templates to help you market your business better. These templates are designed to suit the needs of the customer. </p>
+                            </div>
+                            </div>
+                            <div class="card cardmargin">
+                            <img class="card-img-top" src="Feature 2.png" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">EASY TO USE</h5>
+                                <p class="card-text">Retromailer is user friendly and helps you to launch a successful email marketing campaign on completing a few simple steps.</p>
+                            </div>
+                            </div>
+                            <div class="card cardmargin">
+                            <img class="card-img-top" src="Feature 3.png" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">COST EFFECTIVE</h5>
+                                <p class="card-text">Email marketing has been made both time and cost effective with RetroMailer. Now you can create an email campaign with a minimal budget.</p>
+                            </div>
+                            </div>
+                        </div>  
+                        <br><br id="pricing">
+                    </div>
+                </center>
+                    <br>
+                    <br>
+                <div>
+                <center>
+                    <p class='black' >PRICING</p>
+                    <br>
+                </center> 
+                <div class="box">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sm">
+                                    <h3>Premium Plan</h3>
+                                    <br>
+                                    <p>All services required to launch a full-fledged email marketing campaign on large scale.</p>
+                                    <br>
+                                    <a href="#"><button class="btn btn-outline-secondary" type="button">Learn More</button></a>
+                                    <br><br><br>
+                                </div>
+                                <div class="col-sm">
+                                    <h3>Standard Plan</h3>
+                                    <br>
+                                    <p>Suitable for start-up businesses wanting to expand their customer base using emails.</p>
+                                    <br>
+                                    <a href="#"><button class="btn btn-outline-secondary" type="button">Learn More</button></a>
+                                    <br>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <br><br>
+                </div>
+            
+                <div class='contact' id='contact'>
+                        <center>
+                        <br>
+                        <p class="white1">RETROMAILER - EMAIL MARKETING AT ITS BEST</p>
+                        <br>
+                        </center>
+                </div>            
+        </div>
+            <script>
+                var app= new Vue({
+                    el: '#app',
+                    data: {
+                        navbar:'<img src="logo.png" width="30" height="30" class="d-inline-block align-top" alt="RetroMailer"> RETROMAILER</img>'
+                    }
+                })
+            </script>
+        
+
+
+    </body>
+</html>
