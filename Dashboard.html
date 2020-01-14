@@ -2,6 +2,7 @@
 <html>
     <head>
         <title>Google SignIn</title>
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script> <!---Vuejs-->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Overpass">
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" ></script>
@@ -18,7 +19,7 @@
         </style>
 </head>
 <body>
-    <div id="app1">
+    <div id="app">
             <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark"> 
                 <a v-html="navbar" class="navbar-brand" href="#"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -43,7 +44,7 @@
             </center>
         </div>
         <script>
-                var app1= new Vue({
+                var app= new Vue({
                     el: '#app',
                     data: {
                         navbar:'<img src="logo.png" width="30" height="30" class="d-inline-block align-top" alt="RetroMailer">DASHBOARD</img>'
